@@ -52,6 +52,21 @@ module.exports = function(grunt) {
       html: {
         files: [ '**/*.html', '*.html' ]
       }
+    },
+
+    // watch node server for changes
+    nodemon: {
+      dev: {
+        script: 'server.js'
+      }
+    },
+
+    // run watch and nodemon at the same time
+    concurrent: {
+      options: {
+        logConcurrentOutput: true
+      },
+      tasks: [ 'nodemon', 'watch' ]
     }
 
   });
@@ -61,12 +76,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks( 'grunt-contrib-uglify' );
   grunt.loadNpmTasks( 'grunt-contrib-sass' );
   grunt.loadNpmTasks( 'grunt-contrib-watch' );
+  grunt.loadNpmTasks( 'grunt-nodemon' );
+  grunt.loadNpmTasks( 'grunt-concurrent' );
 
   // register tasks
   grunt.registerTask('default', [
     'jshint',
     'uglify',
-    'sass'
+    'sass',
+    'concurrent'
   ]);
 
 };
