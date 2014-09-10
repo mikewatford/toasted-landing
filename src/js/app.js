@@ -1,6 +1,6 @@
 var toastedLife = angular.module( 'toastedLife', [ 'ngRoute' ] );
  
-toastedLife.config( [ '$routeProvider', function( $routeProvider ){
+toastedLife.config( [ '$routeProvider', '$locationProvider', function( $routeProvider, $locationProvider ){
   $routeProvider
     
     // route for home page
@@ -20,6 +20,8 @@ toastedLife.config( [ '$routeProvider', function( $routeProvider ){
       templateUrl : 'pages/contact.html',
       controller : 'contactController'
     });
+
+  $locationProvider.html5Mode( true );
 
 }] );
 
