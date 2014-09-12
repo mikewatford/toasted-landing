@@ -1,0 +1,21 @@
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.navbar {
+  z-index: 999;
+}
+
+.ng-enter {
+  animation: slideOutTop 1s both ease-in;
+  z-index: 777;
+}
+
+.ng-leave {
+  animation: slideOutBottom 1s both ease-in;
+  z-index: 888;
+}

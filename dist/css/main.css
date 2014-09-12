@@ -1,0 +1,102 @@
+.page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 200px;
+}
+
+.navbar {
+  z-index: 999;
+}
+
+.ng-enter {
+  -webkit-animation: slideOutTop 1s both ease-in;
+  -moz-animation: slideOutTop 1s both ease-in;
+  animation: slideOutTop 1s both ease-in;
+  z-index: 777;
+}
+
+.ng-leave {
+  -webkit-animation: slideOutBottom 1s both ease-in;
+  -moz-animation: slideOutBottom 1s both ease-in;
+  animation: slideOutBottom 1s both ease-in;
+  z-index: 888;
+}
+
+.page-home {
+  background-color: #ff4136;
+}
+
+.page-about {
+  background-color: #7fdbff;
+}
+
+.page-contact {
+  background-color: #2ecc40;
+}
+
+/* leaving animations */
+@-webkit-keyframes slideOutTop {
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+/* leaving animations */
+@-moz-keyframes slideOutTop {
+  to {
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+/* leaving animations */
+@keyframes slideOutTop {
+  to {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+/* entering animations */
+@-webkit-keyframes slideOutBottom {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/* entering animations */
+@-moz-keyframes slideOutBottom {
+  from {
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/* entering animations */
+@keyframes slideOutBottom {
+  from {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

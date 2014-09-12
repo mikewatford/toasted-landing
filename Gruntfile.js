@@ -26,7 +26,27 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'dist/css/main.css' : [ 'src/scss/**/*scss', 'src/scss/*.scss' ]
+          'dist/css/main.css' : [ 'src/scss/main.scss', 'src/scss/*.scss' ]
+        }
+      }
+    },
+
+    // add browser prefixes
+    autoprefixer: {
+      options: {
+        browsers: [
+          'last 2 versions',
+          'FF >= 15',
+          'Chrome >= 25',
+          'Safari >= 5.1.10',
+          'Explorer >= 7',
+          'iOS >= 6.1',
+          'Android >= 4.1.1'
+        ] 
+      },
+      dist: {
+        files: {
+          'dist/css/main.css' : 'dist/css/main.css'
         }
       }
     },
@@ -44,9 +64,14 @@ module.exports = function(grunt) {
         tasks: [ 'jshint', 'uglify' ]
       },
 
-      css: {
-        files: [ 'src/scss/**/*.scss', 'src/scss/*.scss' ],
+      scss: {
+        files: [ 'src/scss/main.scss', 'src/scss/*.scss' ],
         tasks: [ 'sass' ]
+      },
+
+      css: {
+        files: 'dist/css/main.css',
+        tasks: [ 'autoprefixer' ]
       },
 
       html: {
@@ -75,6 +100,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks( 'grunt-contrib-jshint' );
   grunt.loadNpmTasks( 'grunt-contrib-uglify' );
   grunt.loadNpmTasks( 'grunt-contrib-sass' );
+  grunt.loadNpmTasks( 'grunt-autoprefixer' );
   grunt.loadNpmTasks( 'grunt-contrib-watch' );
   grunt.loadNpmTasks( 'grunt-nodemon' );
   grunt.loadNpmTasks( 'grunt-concurrent' );
@@ -84,6 +110,7 @@ module.exports = function(grunt) {
     'jshint',
     'uglify',
     'sass',
+    'autoprefixer',
     'concurrent'
   ]);
 

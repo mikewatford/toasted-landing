@@ -1,4 +1,4 @@
-var toastedLife = angular.module( 'toastedLife', [ 'ngRoute' ] );
+var toastedLife = angular.module( 'toastedLife', [ 'ngRoute', 'ngAnimate' ] );
  
 toastedLife.config( [ '$routeProvider', '$locationProvider', function( $routeProvider, $locationProvider ){
   $routeProvider
@@ -26,13 +26,16 @@ toastedLife.config( [ '$routeProvider', '$locationProvider', function( $routePro
 }] );
 
 toastedLife.controller( 'mainController', [ '$scope', function($scope) {
-  $scope.message = 'Shmoney';
+  $scope.message   = 'Shmoney';
+  $scope.pageClass = 'page-home';
 }] );
 
 toastedLife.controller( 'aboutController', [ '$scope', function($scope) {
-  $scope.message = 'All about that shmoney';
+  $scope.message   = 'All about that shmoney';
+  $scope.pageClass = 'page-about';
 }] );
 
 toastedLife.controller( 'contactController', [ '$scope', function($scope) {
-  $scope.message = 'Contact a a a';
+  $scope.message   = 'Contact a a a';
+  $scope.pageClass = 'page-contact';
 }] );
