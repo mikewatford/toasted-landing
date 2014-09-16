@@ -1,11 +1,27 @@
-/* leaving animations */
-@keyframes slideOutTop {
-  to { transform: translateY( -100% ); }
+.page {
+
+  &.ng-leave {
+    z-index: 8888;
+    animation:slideOutTop 0.5s both ease-in;
+  }
+
+  &.ng-enter {
+    z-index: 7777;
+    animation:slideInBottom 0.5s both ease-in;
+  }
+
 }
 
+/* keyframes
+-----------------*/
 
-/* entering animations */
-@keyframes slideOutBottom {
-  from { transform: translateY( 100% ); }
-  to   { transform: translateY( 0 ); }
+/* slide in from the bottom */
+@keyframes slideInBottom {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}
+
+/* slide out from the top */
+@keyframes slideOutTop {
+    to      { transform: translateY(-100%); }
 }
