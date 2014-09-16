@@ -9,16 +9,28 @@ toastedLife.config( [ '$routeProvider', '$locationProvider', function( $routePro
       controller  : 'mainController'
     })
 
-    // route for about page
-    .when( '/about', {
-      templateUrl : 'pages/about.html',
-      controller : 'aboutController'
+    // route for definition page
+    .when( '/2', {
+      templateUrl : 'pages/definition.html',
+      controller  : 'definitionController'
     })
 
-    // route for contact page
-    .when( '/contact', {
-      templateUrl : 'pages/contact.html',
-      controller : 'contactController'
+    // route for mission page
+    .when( '/3', {
+      templateUrl : 'pages/mission.html',
+      controller  : 'missionController'
+    })
+
+    // route for gallery page
+    .when( '/4', {
+      templateUrl : 'pages/gallerylanding.html',
+      controller  : 'galleryController'
+    })
+
+    // route for blog page
+    .when( '/5', {
+      templateUrl : 'pages/bloglanding.html',
+      controller  : 'blogController'
     });
 
   $locationProvider.html5Mode( true );
@@ -30,12 +42,22 @@ toastedLife.controller( 'mainController', [ '$scope', function($scope) {
   $scope.pageClass = 'page-home';
 }] );
 
-toastedLife.controller( 'aboutController', [ '$scope', function($scope) {
+toastedLife.controller( 'definitionController', [ '$scope', function($scope) {
   $scope.message   = 'All about that shmoney';
-  $scope.pageClass = 'page-about';
+  $scope.pageClass = 'page-definition';
 }] );
 
-toastedLife.controller( 'contactController', [ '$scope', function($scope) {
+toastedLife.controller( 'missionController', [ '$scope', function($scope) {
   $scope.message   = 'Contact a a a';
-  $scope.pageClass = 'page-contact';
+  $scope.pageClass = 'page-mission';
+}] );
+
+toastedLife.controller( 'galleryController', [ '$scope', function($scope) {
+  $scope.message   = 'A week agoooooo';
+  $scope.pageClass = 'page-gallerylanding';
+}] );
+
+toastedLife.controller( 'blogController', [ '$scope', function($scope) {
+  $scope.message   = 'Shmurda team';
+  $scope.pageClass = 'page-bloglanding';
 }] );

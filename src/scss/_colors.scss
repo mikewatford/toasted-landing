@@ -1,11 +1,24 @@
+$off-black : #1a1a1a;
+$off-white : #e5e5e5;
+$salmon    : #ff4059;
+$gold      : #a0903e;
+
 .page-home { 
-  background-color: #ff4136;
+  background-color: $off-black;
 }
 
-.page-about { 
-  background-color: #7fdbff;
+.page-definition { 
+  background-color: $salmon;
 }
 
-.page-contact {
-  background-color: #2ecc40;
+.page-mission {
+  background-color: $gold;
+}
+
+.page-gallerylanding {
+  background-color: $off-white;
+}
+
+.page-bloglanding {
+  background-color: $salmon;
 }

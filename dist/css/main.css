@@ -11,15 +11,23 @@
 }
 
 .page-home {
-  background-color: #ff4136;
+  background-color: #1a1a1a;
 }
 
-.page-about {
-  background-color: #7fdbff;
+.page-definition {
+  background-color: #ff4059;
 }
 
-.page-contact {
-  background-color: #2ecc40;
+.page-mission {
+  background-color: #a0903e;
+}
+
+.page-gallerylanding {
+  background-color: #e5e5e5;
+}
+
+.page-bloglanding {
+  background-color: #ff4059;
 }
 
 .page.ng-leave {
