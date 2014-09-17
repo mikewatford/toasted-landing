@@ -16,18 +16,50 @@
 
 .page-definition {
   background-color: #ff4059;
+  color: #a0903e;
 }
 
 .page-mission {
-  background-color: #a0903e;
+  background-color: #1a1a1a;
+  color: #ff4059;
 }
 
 .page-gallerylanding {
-  background-color: #e5e5e5;
+  background-color: #a0903e;
+  color: #e5e5e5;
 }
 
 .page-bloglanding {
   background-color: #ff4059;
+  color: #e5e5e5;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Open Sans", "Arial";
+  font-weight: light;
+  font-weight: 300;
+}
+
+/* Page specific 
+======================== */
+.page-definition {
+  color: #a0903e;
+}
+.page-definition p.phonetic, .page-definition p.part {
+  color: #e5e5e5;
+}
+
+.page-mission {
+  color: #ff4059;
+  text-transform: uppercase;
+}
+
+.page-gallerylanding {
+  color: #e5e5e5;
+}
+
+.page-bloglanding {
+  color: #e5e5e5;
 }
 
 .page.ng-leave {
