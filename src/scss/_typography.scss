@@ -1,0 +1,31 @@
+$toasted-fonts: "Helvetica Neue", "Helvetica", "Open Sans", "Arial";
+
+body {
+  font-family: $toasted-fonts;
+  font-weight: light;
+  font-weight: 300;
+}
+
+/* Page specific 
+======================== */
+.page-definition { 
+  color: $gold;
+  p {
+    &.phonetic, &.part {
+      color: $off-white;
+    }
+  }
+}
+
+.page-mission {
+  color: $salmon;
+  text-transform: uppercase;
+}
+
+.page-gallerylanding {
+  color: $off-white;
+}
+
+.page-bloglanding {
+  color: $off-white;
+}
