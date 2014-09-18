@@ -39,17 +39,17 @@ toastedLife.config( [ '$routeProvider', '$locationProvider', function( $routePro
 
 toastedLife.controller( 'mainController', [ '$scope', function($scope) {
   $scope.message   = 'Shmoney';
-  $scope.pageClass = 'page-home';
+  $scope.pageClass = 'page-home flex-zone';
 }] );
 
 toastedLife.controller( 'definitionController', [ '$scope', function($scope) {
   $scope.message   = 'All about that shmoney';
-  $scope.pageClass = 'page-definition';
+  $scope.pageClass = 'page-definition flex-zone';
 }] );
 
 toastedLife.controller( 'missionController', [ '$scope', function($scope) {
   $scope.message   = 'Contact a a a';
-  $scope.pageClass = 'page-mission';
+  $scope.pageClass = 'page-mission flex-zone';
 }] );
 
 toastedLife.controller( 'galleryController', [ '$scope', function($scope) {
