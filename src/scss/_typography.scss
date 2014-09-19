@@ -1,18 +1,37 @@
+/* Typography
+===================== */
+
+$base-font-size: 16px;
 $toasted-fonts: "Helvetica Neue", "Helvetica", "Open Sans", "Arial";
 
 body {
   font-family: $toasted-fonts;
   font-weight: light;
   font-weight: 300;
+  font-size: 100%;
 }
 
-/* Page specific 
-======================== */
+/* Typography: Page specific  */
 .page-definition { 
   color: $gold;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: emCalc( 100px );
+    font-weight: lighter;
+    letter-spacing: emCalc( 2px );
+  }
   p {
     &.phonetic, &.part {
       color: $off-white;
+      font-size: emCalc( 70px );
+      font-weight: lighter;
+      letter-spacing: emCalc( 2px );
+    }
+    &.def {
+      font-size: emCalc( 47px );
+      font-weight: lighter;
+      letter-spacing: emCalc( 2px );
     }
   }
 }

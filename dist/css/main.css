@@ -1,3 +1,5 @@
+/* Shared
+===================== */
 .page {
   position: absolute;
   top: 0;
@@ -34,6 +36,8 @@
   z-index: 9999;
 }
 
+/* Pages
+===================== */
 .page-home {
   background-image: url("../images/home-bg.jpg");
   background-position: 50% 50%;
@@ -68,19 +72,35 @@
   color: #e5e5e5;
 }
 
+/* Typography
+===================== */
 body {
   font-family: "Helvetica Neue", "Helvetica", "Open Sans", "Arial";
   font-weight: light;
   font-weight: 300;
+  font-size: 100%;
 }
 
-/* Page specific 
-======================== */
+/* Typography: Page specific  */
 .page-definition {
   color: #a0903e;
 }
+.page-definition h1 {
+  text-transform: uppercase;
+  font-size: 6.25em;
+  font-weight: lighter;
+  letter-spacing: 0.125em;
+}
 .page-definition p.phonetic, .page-definition p.part {
   color: #e5e5e5;
+  font-size: 4.375em;
+  font-weight: lighter;
+  letter-spacing: 0.125em;
+}
+.page-definition p.def {
+  font-size: 2.9375em;
+  font-weight: lighter;
+  letter-spacing: 0.125em;
 }
 
 .page-mission {
@@ -96,6 +116,8 @@ body {
   color: #e5e5e5;
 }
 
+/* Animations
+===================== */
 .page.ng-leave {
   z-index: 8888;
   -webkit-animation: slideOutTop 0.5s both ease-in;
@@ -109,8 +131,7 @@ body {
   animation: slideInBottom 0.5s both ease-in;
 }
 
-/* keyframes
------------------*/
+/* Animations: keyframes */
 /* slide in from the bottom */
 @-webkit-keyframes slideInBottom {
   from {
@@ -123,8 +144,7 @@ body {
   }
 }
 
-/* keyframes
------------------*/
+/* Animations: keyframes */
 /* slide in from the bottom */
 @-moz-keyframes slideInBottom {
   from {
@@ -137,8 +157,7 @@ body {
   }
 }
 
-/* keyframes
------------------*/
+/* Animations: keyframes */
 /* slide in from the bottom */
 @keyframes slideInBottom {
   from {
