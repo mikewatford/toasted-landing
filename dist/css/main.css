@@ -35,11 +35,21 @@
 }
 
 .page-home {
+  background-image: url("../images/home-bg.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   background-color: #1a1a1a;
 }
 
 .page-definition {
-  background-color: #ff4059;
+  background-image: url("../images/definition-bg.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #1a1a1a;
   color: #a0903e;
 }
 
