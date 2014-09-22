@@ -57,11 +57,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-.testing {
-  position: absolute;
-  z-index: 9999;
-}
-
 /* Pages
 ===================== */
 .page-home {
