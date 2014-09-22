@@ -1,5 +1,9 @@
 /* Shared
 ===================== */
+body, html {
+  background-color: $off-black;
+}
+
 .page {
   position: absolute;
   top: 0;
@@ -9,11 +13,39 @@
 
 .flex-zone {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.navbar {
+nav {
+  &.prev, &.next {
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    font-size: emCalc( 52px );
+  }
+  
+  &.prev {
+    top: 25px;
+  }
+
+  &.next {
+    bottom: 25px;
+  }
+
+  a {
+    color: rgba( 255, 255, 255, 0.5 );
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgba( 255, 255, 255, 1.0 );
+    text-decoration: none;
+  }
+}
+
+.testing {
+  position: absolute;
   z-index: 9999;
 }

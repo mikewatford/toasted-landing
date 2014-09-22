@@ -33,31 +33,41 @@ toastedLife.config( [ '$routeProvider', '$locationProvider', function( $routePro
       controller  : 'blogController'
     });
 
-  $locationProvider.html5Mode( true );
+  // $locationProvider.html5Mode( true );
 
 }] );
 
 toastedLife.controller( 'mainController', [ '$scope', function($scope) {
   $scope.message   = 'Shmoney';
   $scope.pageClass = 'page-home flex-zone';
+  $scope.navPrev   = '/';
+  $scope.navNext   = '2';
 }] );
 
 toastedLife.controller( 'definitionController', [ '$scope', function($scope) {
   $scope.message   = 'All about that shmoney';
   $scope.pageClass = 'page-definition flex-zone';
+  $scope.navPrev   = '/';
+  $scope.navNext   = '3';
 }] );
 
 toastedLife.controller( 'missionController', [ '$scope', function($scope) {
   $scope.message   = 'Contact a a a';
   $scope.pageClass = 'page-mission flex-zone';
+  $scope.navPrev   = '2';
+  $scope.navNext   = '4';
 }] );
 
 toastedLife.controller( 'galleryController', [ '$scope', function($scope) {
   $scope.message   = 'A week agoooooo';
   $scope.pageClass = 'page-gallerylanding';
+  $scope.navPrev   = '3';
+  $scope.navNext   = '5';
 }] );
 
 toastedLife.controller( 'blogController', [ '$scope', function($scope) {
   $scope.message   = 'Shmurda team';
   $scope.pageClass = 'page-bloglanding';
+  $scope.navPrev   = '4';
+  $scope.navNext   = '/';
 }] );
