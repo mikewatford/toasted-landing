@@ -1,35 +1,37 @@
 /* Pages
 ===================== */
-.page-home { 
-  background-image: url( "../images/home-bg.jpg" );
-  background-position: 50% 50%;
+.bcg {
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+
+#page-home .bcg { 
+  background-image: url( "../images/home-bg.jpg" );
   background-color: $off-black;
 }
 
-.page-definition { 
+#page-definition .bcg { 
   background-image: url( "../images/definition-bg.jpg" );
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   background-color: $off-black;
   color: $gold;
 }
 
-.page-mission {
+#page-mission .bcg {
   background-color: $off-black;
   color: $salmon;
 }
 
-.page-gallerylanding {
+#page-gallerylanding .bcg {
   background-color: $gold;
   color: $off-white;
 }
 
-.page-bloglanding {
+#page-bloglanding .bcg {
   background-color: $salmon;
   color: $off-white;
 }

@@ -1,14 +1,23 @@
 /* Shared
 ===================== */
 body, html {
-  background-color: $off-black;
+  background-color: $off-white;
+  height: 100%;
+  min-height: 100%;
 }
 
-.page {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+.main {
+  height: 100%;
+}
+
+section, .hsContainer {
   width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+
+.hsContent {
+  max-width: 960px;
 }
 
 .flex-zone {

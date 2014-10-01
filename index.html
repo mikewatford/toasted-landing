@@ -8,16 +8,93 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/css/main.css">
-
-  <script src="libs/angular/angular.min.js"></script>
-  <script src="libs/angular-route/angular-route.min.js"></script>
-  <script src="libs/angular-animate/angular-animate.min.js"></script>
-  <script src="dist/js/app.min.js"></script>
+  
 </head>
-<body ng-scope>
+<body>
+  <div class="main">
+    
+    <!-- Section 1: Home -->
+    <section id="page-home" class="homeSlide">
+      <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#page-home"
+      >
+        <div class="hsContainer flex-zone">
+          <div class="hsContent"
+            data-center="bottom: 200px; opacity: 1"
+            data-top="bottom: 1200px; opacity: 0"
+            data-anchor-target="#page-home h2"
+          >
+            <h2>Toasted Life</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Definition -->
+    <section id="page-definition" class="homeSlide">
+      <div class="bcg"
+        data-center="background-position: 50% 0px;"
+        data-top-bottom="background-position: 50% -100px;"
+        data-bottom-top="background-position: 50% 100px;"
+        data-anchor-target="#page-definition"
+      >
+        <div class="hsContainer flex-zone">
+          <div class="hsContent"
+            data-center="opacity: 1"
+            data-center-top="opacity: 0"
+            data--100-bottom="opacity: 0;"
+            data-anchor-target="#page-definition"
+          >
+            <h1>Toasted</h1>
+            <p class="phonetic">/ t&#333;sted /</p>
+            <p class="part"><i>verb</i> | <i>past tense</i></p>
+            <p class="def"><i>To drink to the health or in honor of something,  by raising one's glass together with others.</i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Mission -->
+    <section id="page-mission" class="homeSlide">
+      <div class="bcg">
+        <div class="hsContainer">
+          <div class="hsContent">
+            <h1>Toasted Life</h1>
+            <p>A mentality, a network &amp; a lifestyle.</p>
+            <p>We cater to diverse professionals  in the bay area through event &nbsp;production &amp; consulting&nbsp;services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Gallery -->
+    <section id="page-gallerylanding" class="homeSlide">
+      <div class="bcg">
+        <div class="hsContainer">
+          <div class="hsContent">
+            <p>Stuff here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Blog -->
+    <section id="page-bloglanding" class="homeSlide">
+      <div class="bcg">
+        <div class="hsContainer">
+          <div class="hsContent">
+            <p>Stuff here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /main -->
   
-  <div class="page {{ pageClass }}" ng-view></div>
-  
-  
+  <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="dist/js/app.min.js"></script>
+  <script src="libs/skrollr/dist/skrollr.min.js"></script>
 </body>
 </html>

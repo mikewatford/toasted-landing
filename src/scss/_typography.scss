@@ -8,10 +8,16 @@ body {
   font-weight: light;
   font-weight: 300;
   font-size: 100%;
+  
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
 }
 
 /* Typography: Page specific  */
-.page-definition { 
+#page-definition { 
   color: $gold;
 
   h1 {
@@ -35,7 +41,7 @@ body {
   }
 }
 
-.page-mission {
+#page-mission {
   color: $salmon;
   text-transform: uppercase;
 
@@ -51,10 +57,10 @@ body {
   }
 }
 
-.page-gallerylanding {
+#page-gallerylanding {
   color: $off-white;
 }
 
-.page-bloglanding {
+#page-bloglanding {
   color: $off-white;
 }
