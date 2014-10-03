@@ -147,11 +147,13 @@ body h1, body h2 {
   font-size: 6.25em;
   font-weight: lighter;
   letter-spacing: 0.125em;
+  text-align: center;
 }
 #page-mission p {
   font-size: 4em;
   font-weight: lighter;
   letter-spacing: 0.125em;
+  text-align: center;
 }
 
 #page-gallerylanding {

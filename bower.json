@@ -4,6 +4,8 @@
   "dependencies": {
     "bootstrap"    : "latest",
     "skrollr"      : "latest",
-    "imagesloaded" : "latest"
+    "imagesloaded" : "latest",
+    "enquire"      : "latest",
+    "modernizr"    : "latest"
   }
 }
