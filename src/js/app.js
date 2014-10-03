@@ -8,22 +8,21 @@
     //FadeIn all sections   
   $body.imagesLoaded( function() {
     setTimeout(function() {
-          
-          // Resize sections
-          adjustWindow();
-          
-          // Fade in sections
-        $body.removeClass('loading').addClass('loaded');
+      // Resize sections
+      adjustWindow();
+      
+      // Fade in sections
+      $body.removeClass('loading').addClass('loaded');
         
     }, 800);
   });
   
   function adjustWindow(){
-
     // Get window size
     winH = $window.height();
     winW = $window.width();
 
+    // s = skrollr.init();
     // Keep minimum height 550
     if(winH <= 550) {
       winH = 550;
@@ -35,16 +34,37 @@
       var s = skrollr.init({
         forceHeight: false
       });
-
       // Resize slides
-      // $slide.height(winH);
+      $slide.height(winH);
       
       // Refresh Skrollr after resizing our sections
       s.refresh($('.homeSlide'));
     } else {
-      var sk = skrollr.init();
-      sk.destroy();
+      skrollr.init().destroy();
+      console.log('destroyed');
+    }
+
+    // Disable skrollr for touch devices
+    if( Modernizr.touch ){
+      skrollr.init().destroy();
+      console.log('touch destroyed');
     }
   }
+
+  function initAdjustWindow(){
+    return {
+      match   : function(){
+        adjustWindow();
+      },
+      unmatch : function(){
+        adjustWindow();
+      }
+    };
+  }
+
+  enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
+
+
+  
     
 } )( jQuery );
