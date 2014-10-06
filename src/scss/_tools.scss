@@ -1,0 +1,18 @@
+$base-font-size: 16px;
+
+@function emCalc( $px, $base: $base-font-size ) {
+  @return ( $px / $base ) * 1em;
+}
+
+@mixin bp( $point ) {
+  @if $point == md {
+    @media ( max-width:1024px ) {
+      @content;
+    }
+  }
+  @else if $point == sm {
+    @media ( max-width:735px ) {
+      @content;
+    }
+  }
+}
