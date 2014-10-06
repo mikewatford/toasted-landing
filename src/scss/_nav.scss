@@ -1,0 +1,22 @@
+nav {
+  /* Collapsed */
+  width: 0; 
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#main-nav:target {
+  width: 20%;
+}
+
+.navigation {
+  transition: width 0.3s ease;
+}
+
+#main-nav:target + .main {
+  width: 80%;
+}
