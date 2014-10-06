@@ -19,6 +19,16 @@ section, .hsContainer {
 .hsContent {
   max-width: 960px;
 }
+@media (max-width: 735px) {
+  .hsContent {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 1024px) {
+  .hsContent {
+    padding: 0 5%;
+  }
+}
 
 .flex-zone {
   display: -webkit-box;
