@@ -34,6 +34,7 @@
       var s = skrollr.init({
         forceHeight: false
       });
+      
       // Resize slides
       $slide.height(winH);
       
@@ -41,13 +42,13 @@
       s.refresh($('.homeSlide'));
     } else {
       skrollr.init().destroy();
-      console.log('destroyed');
+      console.log( 'destroyed');
     }
 
     // Disable skrollr for touch devices
     if( Modernizr.touch ){
       skrollr.init().destroy();
-      console.log('touch destroyed');
+      console.log( 'destroyed touch');
     }
   }
 
@@ -64,7 +65,5 @@
 
   enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
 
-
-  
     
 } )( jQuery );

@@ -77,6 +77,16 @@ body.loading {
   min-height: 100%;
   height: 100%;
 }
+@media (max-width: 735px) {
+  .bcg {
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 1024px) {
+  .bcg {
+    background-attachment: scroll;
+  }
+}
 
 #page-home .bcg {
   background-image: url("../images/home-bg.jpg");
