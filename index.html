@@ -18,15 +18,25 @@
     <img src="dist/images/definition-bg.jpg" height="1278" width="1920" alt="">
     <img src="dist/images/home-bg.jpg" height="1333" width="2000" alt="">
   </div>
-  
-  <nav id="main-nav" class="navigation">
-    <a href="#">Nav Links</a>
-    <a href="#">Close</a>
-  </nav>
 
+  <input type="checkbox" class="main-nav-check" id="main-nav-check" />
+  <nav class="main-nav" id="main-nav">
+    <a href="#home">Home</a>
+    <a href="#definition">The Definition</a>
+    <a href="#mission">The Mission</a>
+    <a href="#events">Our Events</a>
+    <a href="#blog">Blog</a>
+  </nav>
+  
   <div class="main">
+    <header class="main-header">
+      <label for="main-nav-check" class="toggle-menu">
+        ☰
+      </label>
+    </header>
     
     <!-- Section 1: Home -->
+    <a name="home"></a>
     <section id="page-home" class="homeSlide">
       <div class="bcg"
         data-center="background-position: 50% 0px;"
@@ -37,16 +47,16 @@
           <div class="hsContent"
             data-center="bottom: 200px; opacity: 1"
             data-top="bottom: 1200px; opacity: 0"
-            data-anchor-target="#page-home h2"
+            data-anchor-target="#page-home img"
           >
-            <h2>Toasted Life</h2>
-            <a href="#main-nav">menu</a>
+            <img src="dist/images/home-logo.png" height="350" width="350" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- Section 2: Definition -->
+    <a name="definition"></a>
     <section id="page-definition" class="homeSlide">
       <div class="bcg"
         data-center="background-position: 50% 0px;"
@@ -71,6 +81,7 @@
     </section>
 
     <!-- Section 3: Mission -->
+    <a name="mission"></a>
     <section id="page-mission" class="homeSlide">
       <div class="bcg">
         <div class="hsContainer flex-zone">
@@ -90,6 +101,7 @@
     </section>
 
     <!-- Section 4: Events -->
+    <a name="events"></a>
     <section id="page-eventslanding" class="homeSlide">
       <div class="bcg">
         <div class="hsContainer">
@@ -102,6 +114,7 @@
     </section>
 
     <!-- Section 5: Blog -->
+    <a name="blog"></a>
     <section id="page-bloglanding" class="homeSlide">
       <div class="bcg">
         <div class="hsContainer">
