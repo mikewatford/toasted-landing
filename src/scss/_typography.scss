@@ -66,3 +66,13 @@ body {
 #page-bloglanding {
   color: $off-white;
 }
+
+/* Typography: Nav  */
+.main-nav {
+  a {
+    font-size: emCalc( 24px );
+    font-weight: lighter;
+    letter-spacing: emCalc( 2px );
+    line-height: emCalc( 30px );
+  }
+}
