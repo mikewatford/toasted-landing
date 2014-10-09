@@ -59,8 +59,13 @@ body {
   }
 }
 
-#page-gallerylanding {
+#page-eventslanding {
   color: $off-white;
+  h1 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: emCalc( 2px );
+  }
 }
 
 #page-bloglanding {
