@@ -56,6 +56,14 @@ body {
     font-weight: lighter;
     letter-spacing: emCalc( 2px );
     text-align: center;
+
+    &.tagline {
+      padding-top: emCalc( 2px );
+    }
+
+    &.desc {
+      padding-top: emCalc( 12px );
+    }
   }
 }
 

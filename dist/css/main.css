@@ -304,6 +304,12 @@ body h1, body h2 {
   letter-spacing: 0.125em;
   text-align: center;
 }
+#page-mission p.tagline {
+  padding-top: 0.125em;
+}
+#page-mission p.desc {
+  padding-top: 0.75em;
+}
 
 #page-eventslanding {
   color: #e5e5e5;
