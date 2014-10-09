@@ -243,7 +243,8 @@ body.loading {
 }
 
 #page-eventslanding .bcg {
-  background-color: #a0903e;
+  background-image: url("../images/events-bg.jpg");
+  background-color: #1a1a1a;
   color: #e5e5e5;
 }
 
@@ -304,8 +305,13 @@ body h1, body h2 {
   text-align: center;
 }
 
-#page-gallerylanding {
+#page-eventslanding {
   color: #e5e5e5;
+}
+#page-eventslanding h1 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
 }
 
 #page-bloglanding {
