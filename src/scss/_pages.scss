@@ -32,6 +32,11 @@
 #page-mission .bcg {
   background-color: $off-black;
   color: $salmon;
+
+  .btn {
+    background-color: $salmon;
+    border-color: $salmon;
+  }
 }
 
 #page-eventslanding .bcg {

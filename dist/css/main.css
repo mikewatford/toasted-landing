@@ -241,6 +241,10 @@ body.loading {
   background-color: #1a1a1a;
   color: #ff4059;
 }
+#page-mission .bcg .btn {
+  background-color: #ff4059;
+  border-color: #ff4059;
+}
 
 #page-eventslanding .bcg {
   background-image: url("../images/events-bg.jpg");
@@ -309,6 +313,11 @@ body h1, body h2 {
 }
 #page-mission p.desc {
   padding-top: 0.75em;
+  margin-bottom: 1em;
+}
+#page-mission a.btn {
+  padding: 14px 20px;
+  font-size: 18px;
 }
 
 #page-eventslanding {
