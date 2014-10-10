@@ -241,9 +241,14 @@ body.loading {
   background-color: #1a1a1a;
   color: #ff4059;
 }
+#page-mission .bcg .btn {
+  background-color: #ff4059;
+  border-color: #ff4059;
+}
 
 #page-eventslanding .bcg {
-  background-color: #a0903e;
+  background-image: url("../images/events-bg.jpg");
+  background-color: #1a1a1a;
   color: #e5e5e5;
 }
 
@@ -303,9 +308,25 @@ body h1, body h2 {
   letter-spacing: 0.125em;
   text-align: center;
 }
+#page-mission p.tagline {
+  padding-top: 0.125em;
+}
+#page-mission p.desc {
+  padding-top: 0.75em;
+  margin-bottom: 1em;
+}
+#page-mission a.btn {
+  padding: 14px 20px;
+  font-size: 18px;
+}
 
-#page-gallerylanding {
+#page-eventslanding {
   color: #e5e5e5;
+}
+#page-eventslanding h1 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
 }
 
 #page-bloglanding {

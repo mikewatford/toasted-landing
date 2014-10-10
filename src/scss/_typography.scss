@@ -56,11 +56,32 @@ body {
     font-weight: lighter;
     letter-spacing: emCalc( 2px );
     text-align: center;
+
+    &.tagline {
+      padding-top: emCalc( 2px );
+    }
+
+    &.desc {
+      padding-top: emCalc( 12px );
+      margin-bottom: emCalc( 16px );
+    }
   }
+
+  a.btn {
+    padding: 14px 20px;
+    font-size: ( 18px );
+  }
+
+
 }
 
-#page-gallerylanding {
+#page-eventslanding {
   color: $off-white;
+  h1 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: emCalc( 2px );
+  }
 }
 
 #page-bloglanding {
