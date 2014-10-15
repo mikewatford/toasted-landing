@@ -21,6 +21,35 @@
 #page-home .bcg { 
   background-image: url( "../images/home-bg.jpg" );
   background-color: $off-black;
+  
+  #arrow {
+		width:100%;
+		padding-bottom: 10px; 
+		text-align: center;
+		position: absolute; 
+		bottom:0;
+		-webkit-animation: fade 4s;
+    -webkit-animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+	}
+	
 }
 
 #page-definition .bcg { 
@@ -79,5 +108,5 @@
     border-color: $gold;
   }
   
-  #padding-bottom-15 {padding-bottom: 15px;}
+  #social-contact {margin-top:30px;}
 }
