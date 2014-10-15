@@ -36,7 +36,7 @@
   top: 0;
   width: 0;
   height: 100%;
-  background: #3B3B3B;
+  background: #000;
   overflow: hidden;
   transition: width 0.3s ease;
   padding-top: 85px;
@@ -52,13 +52,17 @@
   
   a {
     display: block;
+    background: #000;
+    /*
     background: linear-gradient(#3E3E3E, #383838);
     border-top: 1px solid #484848;
     border-bottom: 1px solid #2E2E2E;
+    */
     color: $off-white;
     padding: 15px;
     &:hover, &:focus {
-      background: linear-gradient(#484848, #383838);
+    	background: #000;
+      /*background: linear-gradient(#484848, #383838);*/
     }
   }
   &:after {
@@ -98,4 +102,34 @@
   @include bp( md ) {
     width: 100%;
   }
+}
+
+#social {margin-left: 20px;}
+
+#social span {
+	float: left; 
+	padding: 5px;
+	}
+
+
+#facebook {
+	background-image: url( "../images/facebook-white.png" );
+	background-size: cover;
+}
+
+
+#instagram {
+	background-image: url( "../images/instagram-white.png" );
+	background-size: cover;
+}
+
+
+#tumblr {
+	background-image: url( "../images/tumblr-white.png" );
+	background-size: cover;
+}
+
+#soundcloud {
+	background-image: url( "../images/soundcloud-white.png" );
+	background-size: cover;
 }

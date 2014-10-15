@@ -23,11 +23,19 @@
   <nav class="main-nav" id="main-nav">
     <a href="#home">Home</a>
     <a href="#definition">The Definition</a>
-    <a href="#mission">The Mission</a>
-    <a href="#events">Our Events</a>
+    <a href="#mission">About Us</a>
+    <a href="#events">Events</a>
     <a href="#blog">Blog</a>
+    
+    <div id="social">
+		<span><a href="//www.facebook.com/ToastedParties" id="facebook" target="_blank"></a></span>
+		<span><a href="//instagram.com/toastedlife" id="instagram" target="_blank"></a></span>
+		<span><a href="//culturalbubbly.tumblr.com/" id="tumblr" target="_blank"></a></span>
+		<span><a href="//soundcloud.com/toastedsounds" id="soundcloud" target="_blank"></a></span>
+    </div>
+    
   </nav>
-  
+      
   <div class="main">
     <header class="main-header">
       <label for="main-nav-check" class="toggle-menu">
@@ -74,7 +82,9 @@
             <h1>Toasted</h1>
             <p class="phonetic">/ t&#333;sted /</p>
             <p class="part"><i>verb</i> | <i>past tense</i></p>
-            <p class="def"><i>To drink to the health or in honor of something,  by raising one's glass together with others.</i></p>
+            <p class="def"><i>To drink to the health or in honor of something,
+ by raising one's glass together with others.</i></p>
+ 			<p><a href="//www.toastedlife.com/contact/the-mentality/" class="btn btn-primary btn-lg">Why We Toast</a></p>
           </div>
         </div>
       </div>
@@ -93,8 +103,10 @@
           >
             <h1>Toasted Life</h1>
             <p class="tagline">A mentality, a network &amp; a lifestyle.</p>
-            <p class="desc">We cater to diverse professionals  in the bay area through event &nbsp;production &amp; consulting&nbsp;services.</p>
-            <p><a href="http://www.toastedlife.com/contact/the-mentality/" class="btn btn-primary btn-lrg">Learn More</a></p>
+            <p class="desc">We cater to diverse professionals
+ in the bay area through event
+&nbsp;production &amp; consulting&nbsp;services.</p>
+            <p><a href="//www.toastedlife.com/contact/" class="btn btn-primary btn-lrg">Learn More</a></p>
           </div>
         </div>
       </div>
@@ -111,8 +123,29 @@
             data--500-bottom="opacity: 0;"
             data-anchor-target="#page-eventslanding"
           >
-            <h1>Our Events</h1>
-            <a href="#" class="btn btn-primary btn-large">Watch</a>
+          
+          	<div id="bottom-container" class="row">
+	        	<div id="bottom" class="col-xs-12 col-md-8">
+			    	<h1>Our Events</h1>
+						<p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+					<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#largeModal">Watch This</button>
+					<span id="spacer">&nbsp;</span>
+					<a href="//www.toastedlife.com/blog" class="btn btn-primary btn-lg">Our Events</a>
+	        	</div>
+          	</div>
+          	
+          	<!-- Large modal -->
+          	<div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      <div class="modal-body text-center">
+			        <iframe width="853" height="480" src="//www.youtube.com/embed/888Zdp3WO54?rel=0" frameborder="0" allowfullscreen></iframe>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+          	<!-- Large modal -->
+			
           </div>
         </div>
       </div>
@@ -122,17 +155,19 @@
     <a name="blog"></a>
     <section id="page-bloglanding" class="homeSlide">
       <div class="bcg">
-        <div class="hsContent"
-            data-center="opacity: 1"
-            data-center-top="opacity: 0"
-            data--500-bottom="opacity: 0;"
-            data-anchor-target="#page-bloglanding"
-          >
-          <div class="hsContent">
-            <h1>Toasted Blog</h1>
-            <a href="#" class="btn btn-primary btn-large">Read more</a>
-          </div>
-        </div>
+      	<div class="hsContainer flex-zone">
+	        <div class="hsContent"
+	            data-center="opacity: 1"
+	            data-center-top="opacity: 0"
+	            data--500-bottom="opacity: 0;"
+	            data-anchor-target="#page-bloglanding"
+	          >
+	          <div class="hsContent text-center">
+	            <h1 id="padding-bottom-15">Toasted Blog</h1>
+	            	<a href="//www.toastedlife.com/blog" class="btn btn-primary btn-lg">Lifestyle</a>
+	          </div>
+	        </div>
+		</div>
       </div>
     </section>
 
@@ -142,6 +177,16 @@
   <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="libs/enquire/dist/enquire.min.js"></script>
   <script src="libs/skrollr/dist/skrollr.min.js"></script>
+  <script src="libs/bootstrap/js/modal.js"></script>
   <script src="dist/js/app.min.js"></script>
+  
+  <!-- Stops youtube video from playing when modal closes -->
+  <script type="text/javascript">
+  	$(".modal").on('hidden.bs.modal', function(e) {
+    $iframe = $(this).find( "iframe" );
+    $iframe.attr("src", $iframe.attr("src"));
+});
+  </script>
+  
 </body>
 </html>

@@ -27,6 +27,11 @@
   background-image: url( "../images/definition-bg.jpg" );
   background-color: $off-black;
   color: $gold;
+  
+  .btn {
+    background-color: $gold;
+    border-color: $gold;
+  }
 }
 
 #page-mission .bcg {
@@ -43,9 +48,36 @@
   background-image: url( "../images/events-bg.jpg" );
   background-color: $off-black;
   color: $off-white;
+  
+  .btn {
+    background-color: $off-black;
+    border-color: $off-white;
+  }
+  
+  #bottom-container {
+	position: relative;
+	height: 100vh;
+	margin-left: 50px;
+  }
+
+  #bottom {
+	position: absolute;
+	padding-bottom: 20px;
+	bottom: 0px;
+  }
+  
+  #spacer {display: inline;}
 }
 
 #page-bloglanding .bcg {
+  background-image: url( "../images/blog-bg.jpg" );
   background-color: $salmon;
   color: $off-white;
+  
+  .btn {
+    background-color: $gold;
+    border-color: $gold;
+  }
+  
+  #padding-bottom-15 {padding-bottom: 15px;}
 }
