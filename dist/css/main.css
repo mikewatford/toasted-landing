@@ -1,3 +1,4 @@
+/** $gold  : #a0903e; **/
 /* Shared
 ===================== */
 body, html {
@@ -311,7 +312,7 @@ body.loading {
   color: #e5e5e5;
 }
 #page-eventslanding .bcg .btn {
-  background-color: #1a1a1a;
+  background-color: transparent;
   border-color: #e5e5e5;
 }
 #page-eventslanding .bcg #bottom-container {
@@ -326,6 +327,9 @@ body.loading {
 }
 #page-eventslanding .bcg #spacer {
   display: inline;
+}
+#page-eventslanding .bcg #event-center {
+  text-align: center;
 }
 
 #page-bloglanding .bcg {
@@ -411,6 +415,13 @@ body h1, body h2 {
   font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 0.125em;
+}
+#page-eventslanding p {
+  font-size: 1.75em;
+  font-weight: lighter;
+  letter-spacing: 0.125em;
+  text-align: center;
+  padding: 15px 0;
 }
 
 #page-bloglanding {

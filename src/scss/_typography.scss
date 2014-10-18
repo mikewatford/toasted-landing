@@ -82,6 +82,14 @@ body {
     text-transform: uppercase;
     letter-spacing: emCalc( 2px );
   }
+  
+  p {
+    font-size: emCalc( 28px );
+    font-weight: lighter;
+    letter-spacing: emCalc( 2px );
+    text-align: center;
+    padding: 15px 0;
+  }
 }
 
 #page-bloglanding {

@@ -79,7 +79,7 @@
   color: $off-white;
   
   .btn {
-    background-color: $off-black;
+    background-color: transparent;
     border-color: $off-white;
   }
   
@@ -96,6 +96,8 @@
   }
   
   #spacer {display: inline;}
+  
+  #event-center {text-align: center;}
 }
 
 #page-bloglanding .bcg {
